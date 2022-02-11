@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <title>Unit Converter</title>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <h3>Metric/Imperial unit conversion</h3>
+            <h1 id="the-number"></h1>
+        </div>
+    </header>
+    <div id="conversions-container">
+        <section>
+            <h4>Length (Meter/Feet)</h4>
+            <p class="text-small" id="longth"></p>
+        </section>
+        <section>
+            <h4>Length (Meter/Feet)</h4>
+            <p class="text-small" id="volume"></p>
+        </section>
+        <section>
+            <h4>Length (Meter/Feet)</h4>
+            <p class="text-small" id="mass"></p>
+        </section>
+        <form id="input-form">
+            <h4 id="input-label">Enter Your Own Value</h4>
+            <input type="number" min="0" max="9999" placeholder="1" id="input">
+            <button type="submit" id="button">Convert this bish</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

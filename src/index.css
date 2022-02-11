@@ -1,0 +1,124 @@
+:root {
+    --background-light: #FBF7EE;
+    --background-dark: #1F2937;
+    --text-dark: #1A1921;
+    --text-lm-grey: #4E4E4E;
+    --text-dm-grey: #D2D2D2;
+    --pink-purple-grad: linear-gradient(246.26deg, #585DFE 0%, #FB3796 100%);
+    --blue-grad: linear-gradient(246.26deg, #2B75EC 0%, #2EC4DE 100%);
+    --green-grad: linear-gradient(246.26deg, #05795A 0%, #10B680 100%);
+    --pink-orange-grad: linear-gradient(246.26deg, #ED4880 0%, #F38B17 100%);
+    --purple-grad: linear-gradient(246.26deg, #18244A 0%, #3B69E1 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-light);
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: var(--text-dark)
+}
+
+header {
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+    background: var(--pink-purple-grad);
+    color: #FFFFFF;
+}
+
+header h3 {
+    font-size: 22px;
+    line-height: 38px;
+
+    text-align: center;
+    letter-spacing: -0.05em;
+    margin: 40px 0;
+}
+
+header h1 {
+    font-size: 100px;
+    line-height: 24px;
+}
+
+#conversions-container {
+    text-align: center;
+    margin: 40px 0 0;
+}
+
+section {
+    width: 90%;
+    margin: 40px auto 0;
+    border-bottom: 1px solid #b4afa3;
+}
+
+section h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: var(--text-lm-grey);
+}
+
+form {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input-label {
+    color: var(--text-lm-grey);
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+input {
+    margin: 10px 0 0;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    width: 100px;
+    border: 1px solid var(--text-dm-grey);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    background: var(--pink-purple-grad);
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 4px 2px 2px 2px rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
