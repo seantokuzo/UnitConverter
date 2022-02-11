@@ -1,5 +1,3 @@
-// import './index.css'
-
 let inputForm = document.getElementById('input-form')
 inputForm.onsubmit = handleSubmit
 
@@ -36,16 +34,6 @@ function handleSubmit(event) {
     const button = document.getElementById("button")
     button.style.background = gradient
 }
-
-// function handleSubmit(e) {
-//     num = e.target.value
-//     const headerNumber = document.getElementById("the-number")
-//     headerNumber.innerText = num
-//     console.log(num)
-//     handleLongth(num)
-//     handleVolume(num)
-//     handleMass(num)
-// }
 
 const handleLongth = (n) => {
     const m2ft = (n * 3.281).toFixed(3)
